@@ -13,6 +13,7 @@
         <module>gateway-core</module>
         <module>gateway-admin</module>
         <module>gateway-common</module>
+        <module>gateway-monitor</module>
     </modules>
 
     <properties>
