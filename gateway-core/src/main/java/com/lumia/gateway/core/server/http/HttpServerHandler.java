@@ -24,7 +24,7 @@ public class HttpServerHandler extends SimpleChannelInboundHandler<FullHttpReque
             HttpResponse response = this.reRouting(request);
             this.responseRewrite(response);
         } else {
-            System.err.println(String.format("Decode request failure: {}", request.toString()));
+            System.err.println(String.format("Decode request failure: %s", request.toString()));
         }
     }
 
