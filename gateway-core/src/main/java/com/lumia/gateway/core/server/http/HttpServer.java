@@ -29,7 +29,7 @@ public class HttpServer {
                         public void initChannel(SocketChannel ch) throws Exception {
                             ch.pipeline().addLast("http-decoder", new HttpRequestDecoder());
                             ch.pipeline().addLast("http-encoder", new HttpResponseEncoder());
-                            ch.pipeline().addLast("http-redirect", new HttpServerHandler());
+                            ch.pipeline().addLast("http-reRouting", new HttpServerHandler());
                         }
                     });
             // Bind and start to accept incoming connections.
